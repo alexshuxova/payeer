@@ -1,0 +1,99 @@
+.-payeer_statistics
+   h2
+     color #fff
+
+     &:after
+       background #fff
+
+  .period
+    padding 50px 0
+
+    a
+      color #fff
+      font-size 18px
+      letter-spacing 1px
+      font-weight 500
+      padding 6px 16px
+      transition none
+      position relative
+
+      &:hover
+        background #fff
+        border-radius 24px
+        color $blue
+
+        &:after
+          position absolute
+          content ''
+          width 0
+          height 0
+          border-left 4px solid transparent
+          border-right 4px solid transparent
+          border-top 6px solid #fff
+          top 100%
+          left 50%
+          transform translate(-50%, 0)
+
+  .statistics--list
+    font-size 0
+    color #fff
+    padding 32px 0
+    width 960px
+    margin 0 auto
+
+    li
+      display inline-block
+      width calc(100% /3)
+      position relative
+      borderbox()
+
+      &:first-child
+        margin-left 0
+
+      &:last-child
+        margin-right 0
+
+      &:before
+        display inline-block
+        position absolute
+        content ''
+        left 0
+
+      span
+        font-family 'Open Sans'
+        font-size 50px
+        line-height 34px
+        font-weight 300
+        letter-spacing 2px
+
+      p
+        font-size 18px
+        line-height 20px
+        color #a7c5cf
+        padding-top 14px
+
+  .include
+    padding-left 15px
+
+    &:before
+      background url('../images/content/earth.png') no-repeat
+      width 60px
+      height 60px
+      top -12px
+
+  .operations
+    padding-left 20px
+
+    &:before
+      background url('../images/content/money.png') no-repeat
+      width 57px
+      height 68px
+      top -19px
+
+  .registrations
+    padding-left 40px
+
+    &:before
+      background url('../images/content/key.png') no-repeat
+      width 71px
+      height 36px

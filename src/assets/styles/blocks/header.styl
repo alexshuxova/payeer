@@ -1,0 +1,258 @@
+#header
+  width 100%
+  position relative
+  overflow hidden
+
+.header_1
+  height 826px
+
+.header_2
+  height 278px
+
+.header_3
+  height 274px
+
+.videobg
+  z-index 1
+  position absolute
+  top 0
+  left 0
+
+.imagebg
+  z-index 2
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+
+.-bg_1
+  background url('../images/content/bg1.png') no-repeat
+
+.-bg_2
+  background url('../images/content/bg2.png') no-repeat
+
+.-bg_4
+  background url('../images/content/bg4.png') no-repeat
+
+.overlay_dark
+  z-index 3
+  position absolute
+  top 0
+  left 0
+  background #000
+  opacity 0.4
+  width 100%
+  height 100%
+
+.overlay_gradient
+  z-index 4
+  position absolute
+  top 0
+  left 0
+  background linear-gradient(127deg, rgba(0, 168, 198, 0.6), rgba(2, 136, 205, 0.6))
+  width 100%
+  height 100%
+
+.content
+  z-index 5
+  position absolute
+  top 0
+  left 0
+  background transparent
+  width 100%
+  height 100%
+
+  .header
+    width 100%
+    height 90px
+    padding 30px
+    borderbox()
+
+    &:after
+      display block
+      content ''
+      margin 30px 0
+      background rgba(255, 255, 255, 0.2)
+      height 1px
+      width 100%
+
+    .white_logo
+      display block
+      float left
+      width 126px
+      height 26px
+      background url('../images/content/white_logo.png')
+
+    .logo_description
+      display inline-block
+      font-size 11px
+      line-height 14px
+      text-transform uppercase
+      padding-left 20px
+      font-weight 500
+      color rgba(255, 255, 255, 0.5)
+
+    .service_type
+      display inline-block
+      position absolute
+      left 50%
+      transform translate(-50%, 0)
+      padding-bottom 8px
+
+      @media (max-width: 1300px) {
+        transform: translate(20%, 0);
+        left 300px
+      }
+
+      a
+        display inline-block
+        color rgba(255, 255, 255, 0.5)
+        font-size 16px
+        line-height 15px
+        text-transform uppercase
+        letter-spacing 1px
+        padding-top 10px
+        margin 0 17px
+
+        &:hover
+          color #fff
+
+      .active
+        border-bottom 3px solid #fff
+        padding-bottom 31px
+
+    .language, .contacts, .full_version
+      float right
+      color #fff
+      font-size 15px
+      margin 6px 0 0 50px
+      position relative
+      border-bottom 1px solid #fff
+      padding-bottom 3px
+      opacity 0.9
+
+      &:hover
+        color #33cc00
+        border-color #33cc00
+
+      &:before
+        display block
+        content ''
+        padding-left 8px
+
+    .full_version
+       margin-left 32px
+
+       &:before
+         background url('../images/content/small_globe.png') no-repeat
+         width 23px
+         height 23px
+         position absolute
+         left -30px
+         top -5px
+
+        &:hover:before
+          background url('../images/content/small_globe_hover.png') no-repeat
+
+      .contacts
+        margin-left 82px
+
+        &:before
+          background url('../images/content/mail.png') no-repeat
+          width 26px
+          height 22px
+          position absolute
+          left -32px
+          top -5px
+
+        &:hover:before
+          background url('../images/content/mail_hover.png') no-repeat
+
+      .select_language
+        float right
+        padding 4px 0 20px 50px
+        position relative
+
+        &:hover
+          .language--list
+            opacity 1
+            transform translate(0, 4px)
+
+            a
+              color #fff
+
+              &:hover
+                color #33cc00
+
+        &:after
+          display block
+          content ''
+          background url('../images/content/select.png') no-repeat
+          position relative
+          width 9px
+          height 5px
+          left 122px
+          top -10px
+          z-index -1
+
+        &:hover:after
+          transform rotate(180deg)
+          transition transform 0.1s
+
+        .language
+          margin 0 14px 4px 24px
+          float none
+
+          &:before
+            background url('../images/content/eng.png') no-repeat
+            position absolute
+            width 16px
+            height 11px
+            left -24px
+            top 3px
+
+          &:hover:after
+            content ''
+            width 16px
+            height 11px
+            position absolute
+            background url('../images/content/select_hover.png') no-repeat
+            top 2px
+            right -13px
+            transform rotate(180deg)
+            transition transform 0.1s
+            z-index 9999
+
+
+      .language--list
+        display block
+        position absolute
+        opacity 0
+        transform translate(0,0)
+        transition opacity 0.25s linear, transform 0.25s linear
+        padding 9px 0
+
+        li
+          padding 6px 0
+          font-size 15px
+
+        .english
+
+          &:before
+            display inline-block
+            content ''
+            background url('../images/content/eng.png') no-repeat
+            width 16px
+            height 11px
+            padding-right 6px
+
+        .russian
+
+          &:before
+            display inline-block
+            content ''
+            background url('../images/content/rus.png') no-repeat
+            width 16px
+            height 11px
+            padding-right 6px

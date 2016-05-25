@@ -1,0 +1,81 @@
+.button
+	font-size 18px
+	display inline-block
+	color #fff
+	padding 18px 30px 20px
+	border-radius 28px
+	text-decoration none
+	position relative
+
+	&.-green
+		border-top 1px solid #52e752
+		box-shadow 1px 1px 3px #2d7d2c
+		background #00ca00
+		background -moz-linear-gradient(top,  #4bd609 0%, #02cb00 100%)
+		background -webkit-linear-gradient(top,  #4bd609 0%,#02cb00 100%)
+		background linear-gradient(to bottom,  #4bd609 0%,#02cb00 100%)
+		transition background 0.25s
+
+		&:hover
+			background #00ca00
+			background -moz-linear-gradient(top,  #4bd609 0%, #0ab408 100%)
+			background -webkit-linear-gradient(top,  #4bd609 0%,#0ab408 100%)
+			background linear-gradient(to bottom,  #4bd609 0%,#0ab408 100%)
+			transition 0.2s
+
+		&.-purse
+			padding 21px 40px 21px 65px
+			border-radius 50px
+
+			&:before
+				display inline-block
+				content ''
+				background url('../images/content/purse.png') no-repeat
+				width 25px
+				height 30px
+				position absolute
+				left 30px
+				bottom 15px
+
+	&.-transparent
+		padding 17px 29px 19px
+		border 2px solid #fff
+		transition none
+		margin 0 18px
+
+		&:hover
+			background #fff
+			color #000
+			border-color #00ca00
+			transition 0.2s
+
+		 &.-key
+			 border-color #00ca00
+			 padding 21px 26px 18px
+			 border-radius 50px
+
+			 &:before
+				display inline-block
+				content ''
+				background url('../images/content/green_key.png') no-repeat
+				width 30px
+				height 15px
+				vertical-align top
+				margin-right 16px
+
+		 &.-more_systems
+			 border-color #ccc
+			 color #666
+
+			 &:hover
+				 border-color #8b8b8b
+				 color #4e4f4f
+				 background #f6f8f8
+
+		 &.-blue
+			 border-color $blue
+			 color #000
+
+			 &:hover
+				 background $blue
+				 color #fff

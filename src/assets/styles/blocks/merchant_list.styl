@@ -1,0 +1,135 @@
+.merchant--list
+  font-size 0
+  padding 0 130px 0 180px
+
+  .li
+    display inline-block
+    width calc(100% /3 - 87px)
+    position relative
+    padding-left 40px
+    margin 40px 22px
+    vertical-align top
+    borederbox()
+
+    &:first-child
+      margin-left 0
+
+    &:last-child
+      margin-right 0
+
+    &:before
+      display inline-block
+      content ''
+      position absolute
+      left 0
+
+  .-internet
+    &:before
+      width 30px
+      height 34px
+      background url('../images/content/internet-ico.png') no-repeat
+      top 8px
+
+  .-digital
+    &:before
+      width 28px
+      height 29px
+      background url('../images/content/digital-ico.png') no-repeat
+      top 11px
+
+  .-pay
+    &:before
+      width 38px
+      height 26px
+      background url('../images/content/pay-ico.png') no-repeat
+      top 12px
+      left -5px
+
+  .-design
+    &:before
+      width 23px
+      height 31px
+      background url('../images/content/design-ico.png') no-repeat
+      top 8px
+
+  .-shopping
+    width 298px
+
+    &:before
+      width 29px
+      height 32px
+      background url('../images/content/shopping-ico.png') no-repeat
+      top 8px
+
+  .-education
+    &:before
+      width 28px
+      height 29px
+      background url('../images/content/edu-ico.png') no-repeat
+      top 10px
+
+  .-finance
+    &:before
+      width 39px
+      height 31px
+      background url('../images/content/finance-ico.png') no-repeat
+      top 8px
+      left -5px
+
+  .-games
+    &:before
+      width 37px
+      height 27px
+      background url('../images/content/games-ico.png') no-repeat
+      top 8px
+      left -5px
+
+  .-travel
+    &:before
+      width 31px
+      height 26px
+      background url('../images/content/travel-ico.png') no-repeat
+      top 10px
+
+.merchant--category
+  font-size 15px
+  position relative
+  padding 10px 0 0
+
+  li
+    position relative
+    padding-left 15px
+
+    a
+      display block
+      font-family 'Open Sans'
+      color #c4c4c4
+      font-weight 300
+      line-height 25px
+      padding-bottom 4px
+
+      &:before
+        display inline-block
+        content ''
+        width 4px
+        height 4px
+        background #000
+        border-radius 50%
+        position absolute
+        left 0
+        top 12px
+
+      span
+        color #000
+        border-bottom 1px #c4c4c4 solid
+
+        &:hover
+          border none
+
+      &:active
+        font-weight 600
+        color #000
+        border none
+
+        &:before
+          display none

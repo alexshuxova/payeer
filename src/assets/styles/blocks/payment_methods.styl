@@ -1,0 +1,48 @@
+.payment_methods--bg
+  background rgba(4, 35, 50, 0.5)
+  position absolute
+  bottom 0
+  width 100%
+
+  .payment_methods--list
+    font-size 0
+    clearfix()
+    margin 0 auto
+
+    li
+      display inline-block
+      width calc(100% /3 - 80px)
+      font-size 20px
+      line-height 22px
+      color #fff
+      vertical-align top
+      margin 40px
+      padding-top 15px
+
+      span
+        font-size 17px
+        line-height 22px
+        display block
+        color #a8b7be
+        padding-top 3px
+
+      &:first-child
+        margin-left 10px
+
+      &:last-child
+        margin-right 0
+
+      &:before
+        display block
+        content ''
+        width 107px
+        height 66px
+
+    .international_transfers
+      background url('../images/content/globe1.png') no-repeat
+
+    .international_payment
+      background url('../images/content/globe2.png') no-repeat
+
+    .free_card
+      background url('../images/content/free_payeer.png') no-repeat
